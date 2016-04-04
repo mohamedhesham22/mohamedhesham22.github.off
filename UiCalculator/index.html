@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    
+    <title>UI Calculator</title>
+    <link rel="stylesheet" href="css/style.css"/>
+
+
+    </head>
+
+<body>
+
+<section id="container">
+     <h3>Cost Calculator</h3>
+    <form id="ui-calculator" action="" method="post">
+        <ul id="progressbar">
+           <li class="active"></li>
+           <li></li>
+           <li></li>
+           <li></li>
+           <li></li>
+       </ul>
+      
+   
+        <section class="step1 current">
+            <div class="q1">
+            <h2><strong>01</strong>What's your target platform?</h2>
+            <ul class="choices">
+                <li><input type="checkbox">Web </li>
+                <li><input type="checkbox">IOS </li>
+                <li><input type="checkbox">Android </li>
+            </ul>
+            </div>
+            
+        
+           <div id="next">
+              <input type="button" name="next" class="next action-button" value="Next" />
+           </div>
+       </section>
+        
+      <section class="step2">
+          <h2><strong>02</strong>How complex is your project?</h2>
+        <div class="cell-left">
+            <input id="selectRange" type="range" min="0" max="2">
+        </div>
+        <div class="cell-right">
+           <div class="row"><p>High</p></div>
+           <div class="row"><p>Average</p></div>
+           <div class="row"><p>Low</p></div>
+        </div>
+        <div id="next">
+            <input type="button" name="next" class="next action-button" value="Next" />
+        </div>
+     </section>
+         <section class="step3">
+             <h2> <strong>03</strong>How can our process help you?</h2>
+          <div id="column1">
+              <p>UX</p>
+              <ul class="choices">
+                 <li> <input type="checkbox">Personas</li>
+                 <li> <input type="checkbox">IA</li>
+                 <li> <input type="checkbox">Wireframes</li>
+              </ul> 
+            
+          </div>
+         <div id="column1">
+              <p>Visual/UI<p>
+              <ul class="choices">
+                  <li> <input type="checkbox">User Screens</li>
+                  <li> <input type="checkbox">Logo </li>
+              </ul>
+         </div>
+        <div id="column1">
+           <p>Front-End Developments</p>
+           <ul class="choices">
+              <li><input type="checkbox">HTML/CSS </li>
+          </ul>
+        </div>  
+        <div id="next">
+           <input type="button" name="next" class="next action-button" value="Next" />   
+         </div>
+       </section>
+        <section class="step4">
+            <h2><strong>04</strong> Tell us more details about your project?</h2>
+            <textarea placeholder="Write Here"> </textarea>
+            <div id="next">
+               <input type="button" name="next" class="next action-button" value="Next" /> 
+            </div>
+        </section>
+        
+        <section class="step5">
+               <h2><strong>05</strong>Initial estimation</h2>
+            <div id="column1">
+                <h3 >You made it!  Well done</h3>
+                <p>Again this is calculatoronly gives you an</p>
+                <p>initial cost esimation of our software</p>
+                <p>designing</p>
+                <input type="checkbox" class="subscribe">
+                <label>Subscribe to simpleia newsletter</label> 
+            </div>
+           <div id="column2">
+                   <p>Amore accurate estimation will be</p>
+                   <p>sent to you after reviewing your</p>
+                   <p>request</p>
+            </div>
+           <div id="next">
+               <button class="email">Write you email</button>
+               <button class="request">Send Request</button>            
+           </div>
+        </section>
+     </form>
+    </section>
+    
+    <script src = "js/jquery-1.11.3.js"></script>
+    <script src="js/multiForm.js"></script>
+    </body>
+
+
+
+</html>
